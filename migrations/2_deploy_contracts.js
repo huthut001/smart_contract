@@ -9,7 +9,7 @@ function ether(n) {
 
 module.exports = function (deployer, network, accounts) {
   const startTime = new Web3.utils.BN(Math.floor(new Date().getTime() / 1000)); // Now
-  const endTime = new Web3.utils.BN(Math.floor(new Date(2021, 3, 29, 10, 5, 0, 0).getTime() / 1000)); // Sale Stop at 8 August 2020 @08:08:08
+  const endTime = new Web3.utils.BN(Math.floor(new Date(2021, 3, 29, 10, 5, 0, 0).getTime() / 1000));
   const rate = new Web3.utils.BN(20000); // At 20,000 Token/ETH
   const wallet = accounts[0];
   const goal = ether('5000');
